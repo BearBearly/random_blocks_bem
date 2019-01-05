@@ -50,26 +50,38 @@ body{
   margin-top: auto;
 }
 
-.contacts{
+.contacts__list{
   background: #fff;
   margin: 20px 0; 
 }
 
-.contacts table{
-  padding: 10px;
+.contacts__list li{
+  list-style-type: none;
 }
 
-.contacts table tr td{
-  vertical-align: top;
+.contacts__list li > span,
+.contacts__list li a{
   color: #0F680E;
   font-size: 18px;
-  padding-right: 5px;
+  font-family: sans-serif;
 }
 
-.contacts table tr td a{
-  color: #0F680E;
-  font-family: sans-serif;
+.contacts__list li a{
   text-decoration: none;
+}
+
+.contacts__list li > span{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.contacts__list li .title{
+  min-width: 85px;
+}
+
+.phone__list a{
+  display: block;
 }
 
 .posts{
@@ -78,41 +90,35 @@ body{
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  justify-content: space-between;
   font-family: sans-serif;
   margin: 20px 0;
 }
 
-.posts .posts__item {
+.posts .post {
  overflow: hidden;
  padding: 10px;
  max-height: 400px;
 }
 
-.posts .posts__item:first-child{
-  padding-left: 0;
-}
-.posts .posts__item:last-child{
-  padding-right: 0;
-}
-
-.posts .posts__item .top__line{
+.posts .post .top__line{
   background: linear-gradient(to top, rgb(143,232,129) 0%,rgb(38,145,21) 37%,rgb(0,87,0) 100%,rgb(0,36,0) 100%);
   padding: 10px;
   font-size: 14px;
 }
 
-.posts .posts__item .top__line .date{
+.posts .post .top__line .date{
   font-weight: bold;
   padding-bottom: 5px;
 }
 
-.posts .posts__item .top__line .short__info{
+.posts .post .top__line .short__info{
   color: #fff;
   padding-bottom: 30px;
 }
 
-.posts__item_img{
-  overflow: hidden;
+.post .post__img img{
+  max-width: 100%;
 }
 
 .contacts.orange_bg{
@@ -128,18 +134,19 @@ body{
   text-align: right;
 }
 
-.advantages .advantages__item{
+.advantages .advantag{
   background: url(../img/bg.jpg) top;
   padding: 20px;
   margin: 10px 0;
+  list-style-type: none;
 }
 
-.advantages .advantages__item span{
+.advantages .advantag span{
   color: #fff;
   text-transform: uppercase;
 }
 
-.advantages .advantages__item span i{
+.advantages .advantag span i{
   margin-right: 10px;
 }
 
@@ -149,31 +156,24 @@ body{
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  justify-content: space-between;
 }
 
-.promotion__cards .promotion__cards_item{
+.promotion__cards .promotion{
   background: #3F4E86;
   padding: 10px;
-  margin: 0 10px;
+  margin: 0 5px;
   text-align: center;
-  width: 175px;
+  width: 180px;
 }
 
-.promotion__cards .promotion__cards_item:first-child{
-  margin-left: 0;
-}
-
-.promotion__cards .promotion__cards_item:last-child{
-  margin-right: 0;
-}
-
-.promotion__cards .promotion__cards_item .item__icon i{
+.promotion__cards .promotion .promotion__icon i{
   margin: 15px 0;
   font-size: 32px;
   color: #fff;
 }
 
-.promotion__cards .promotion__cards_item .item__text{
+.promotion__cards .promotion .promotion__text{
   font-family: sans-serif;
   color: #fff;
 }

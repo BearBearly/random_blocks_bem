@@ -52,32 +52,42 @@ body{
 
 .contacts__list{
   background: #fff;
-  margin: 20px 0; 
+  margin: 20px 0;
+  padding: 10px; 
 }
 
-.contacts__list li{
+.contacts__list .contacts__list__contact{
   list-style-type: none;
 }
 
-.contacts__list li > span,
-.contacts__list li a{
+.contacts__list .contacts__list__contact > span,
+.contacts__list .contacts__list__contact a{
   color: #0F680E;
   font-size: 18px;
   font-family: sans-serif;
 }
 
-.contacts__list li a{
+.contacts__list .contacts__list__contact a{
   text-decoration: none;
 }
 
-.contacts__list li > span{
+.contacts__list .contacts__list__contact > span{
   display: inline-block;
   vertical-align: top;
   font-size: 16px;
 }
 
-.contacts__list li .title{
+.contacts__list .contacts__list__contact .title{
   min-width: 85px;
+}
+
+.contacts__list.orange_bg{
+  background: linear-gradient(to bottom, rgb(254,197,13) 0%,rgb(240,176,6) 100%,rgb(240,176,6) 100%);
+}
+
+.contacts__list.orange_bg span,
+.contacts__list.orange_bg a{
+  color: #000;
 }
 
 .phone__list a{
@@ -85,19 +95,19 @@ body{
 }
 
 .posts{
-  display: -webkit-flex;
+/*  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;*/
   font-family: sans-serif;
-  margin: 20px 0;
+
 }
 
 .posts .post {
  overflow: hidden;
- padding: 10px;
+ padding: 10px 0;
  max-height: 400px;
 }
 
@@ -121,50 +131,36 @@ body{
   max-width: 100%;
 }
 
-.contacts.orange_bg{
-  background: linear-gradient(to bottom, rgb(254,197,13) 0%,rgb(240,176,6) 100%,rgb(240,176,6) 100%);
-}
-
-.contacts.orange_bg table tr td,
-.contacts.orange_bg table tr td a{
-  color: #000;
-}
-
-.contacts.orange_bg table tr .contacts__title{
-  text-align: right;
-}
-
-.advantages .advantag{
+.advantages .advantages__advantag{
   background: url(../img/bg.jpg) top;
   padding: 20px;
   margin: 10px 0;
   list-style-type: none;
 }
 
-.advantages .advantag span{
+.advantages .advantages__advantag span{
   color: #fff;
   text-transform: uppercase;
 }
 
-.advantages .advantag span i{
+.advantages .advantages__advantag span i{
   margin-right: 10px;
 }
 
 .promotion__cards{
-  display: -webkit-flex;
+/*  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;*/
 }
 
 .promotion__cards .promotion{
   background: #3F4E86;
   padding: 10px;
-  margin: 0 5px;
+  margin: 5px 0;
   text-align: center;
-  width: 180px;
 }
 
 .promotion__cards .promotion .promotion__icon i{

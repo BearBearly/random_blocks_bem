@@ -50,43 +50,41 @@ body{
   margin-top: auto;
 }
 
-.contacts__list{
+.contacts_list{
   background: #fff;
   margin: 20px 0;
   padding: 10px; 
 }
 
-.contacts__list .contacts__list__contact{
-  list-style-type: none;
-}
-
-.contacts__list .contacts__list__contact > span,
-.contacts__list .contacts__list__contact a{
+.contact__title,
+.contact__phone{
   color: #0F680E;
   font-size: 18px;
   font-family: sans-serif;
 }
 
-.contacts__list .contacts__list__contact a{
+.contact__phone{
   text-decoration: none;
+  display: block;
 }
 
-.contacts__list .contacts__list__contact > span{
+.contact__title,
+.contact__phone_list{
   display: inline-block;
   vertical-align: top;
   font-size: 16px;
 }
 
-.contacts__list .contacts__list__contact .title{
+.contact__title{
   min-width: 85px;
 }
 
-.contacts__list.orange_bg{
+.contacts_list_orange_bg{
   background: linear-gradient(to bottom, rgb(254,197,13) 0%,rgb(240,176,6) 100%,rgb(240,176,6) 100%);
 }
 
-.contacts__list.orange_bg span,
-.contacts__list.orange_bg a{
+.contacts_list_orange_bg .contact__title,
+.contacts_list_orange_bg .contact__phone{
   color: #000;
 }
 
@@ -94,40 +92,30 @@ body{
   display: block;
 }
 
-.posts{
-/*  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;*/
+.post {
   font-family: sans-serif;
-
+  overflow: hidden;
+  padding: 10px 0;
+  max-height: 400px;
 }
 
-.posts .post {
- overflow: hidden;
- padding: 10px 0;
- max-height: 400px;
-}
-
-.posts .post .top__line{
+.post__top_line{
   background: linear-gradient(to top, rgb(143,232,129) 0%,rgb(38,145,21) 37%,rgb(0,87,0) 100%,rgb(0,36,0) 100%);
   padding: 10px;
   font-size: 14px;
 }
 
-.posts .post .top__line .date{
+.post__date{
   font-weight: bold;
   padding-bottom: 5px;
 }
 
-.posts .post .top__line .short__info{
+.post__short_info{
   color: #fff;
   padding-bottom: 30px;
 }
 
-.post .post__img img{
+.post__img img{
   max-width: 100%;
 }
 

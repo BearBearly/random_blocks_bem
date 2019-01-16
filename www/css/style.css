@@ -63,33 +63,27 @@ body{
   font-family: sans-serif;
 }
 
-.contact__phone{
-  text-decoration: none;
-  display: block;
-}
-
 .contact__title,
 .contact__phone-list{
   display: inline-block;
   vertical-align: top;
   font-size: 16px;
 }
-
+.contact__phone{
+  text-decoration: none;
+  display: block;
+}
 .contact__title{
   min-width: 85px;
 }
 
-.contacts_list_orange_bg{
+.contacts-list_orange_bg{
   background: linear-gradient(to bottom, rgb(254,197,13) 0%,rgb(240,176,6) 100%,rgb(240,176,6) 100%);
 }
 
-.contacts_list_orange_bg .contact__title,
-.contacts_list_orange_bg .contact__phone{
+.contacts-list_orange_bg .contact__title,
+.contacts-list_orange_bg .contact__phone{
   color: #000;
-}
-
-.phone__list a{
-  display: block;
 }
 
 .post {
@@ -119,45 +113,36 @@ body{
   max-width: 100%;
 }
 
-.advantages .advantages__advantag{
+.advantag{
   background: url(../img/bg.jpg) top;
   padding: 20px;
   margin: 10px 0;
   list-style-type: none;
 }
 
-.advantages .advantages__advantag span{
+.advantag span{
   color: #fff;
   text-transform: uppercase;
 }
 
-.advantages .advantages__advantag span i{
+.advantag span i{
   margin-right: 10px;
 }
 
-.promotion__cards{
-/*  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;*/
-}
-
-.promotion__cards .promotion{
+.promotion{
   background: #3F4E86;
   padding: 10px;
   margin: 5px 0;
   text-align: center;
 }
 
-.promotion__cards .promotion .promotion__icon i{
+.promotion .promotion__icon i{
   margin: 15px 0;
   font-size: 32px;
   color: #fff;
 }
 
-.promotion__cards .promotion .promotion__text{
+.promotion .promotion__text{
   font-family: sans-serif;
   color: #fff;
 }
